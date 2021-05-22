@@ -24,11 +24,19 @@ yarn install
 ## Running the tests
 
 Running all tests
+
 ```
 testcafe chrome
 ```
 
 Running a specific test
+
 ```
 testcafe chrome filename
 ```
+
+## Running the tests
+
+Running all tests
+
+`

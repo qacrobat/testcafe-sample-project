@@ -1,12 +1,13 @@
-import { Selector, t } from 'testcafe';
+import { Selector, t } from "testcafe";
 
 class QuestionPage {
+  get QuizTitle() {
+    return Selector("h2").withText("Geography");
+  }
 
-    get QuizTitle() { return Selector('h2').withText('Geography') }
-
-    async getQuizTitle() {
-        return this.QuizTitle
-    }
+  async getQuizTitle() {
+    return this.QuizTitle;
+  }
 }
 
 export default new QuestionPage();
