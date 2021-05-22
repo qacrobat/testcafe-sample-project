@@ -1,4 +1,4 @@
-# TestCafe Example project
+# testcafe sample project
 
 The purpose of this project is show how to create end to end automation testing using Page Object Pattern with the Library TestCafe.
 
@@ -17,4 +17,18 @@ These instructions will get you a copy of the project up and running on your loc
 git clone https://github.com/qacrobat/testcafe-sample-project.git
 ```
 
+```
+yarn install
+```
+
 ## Running the tests
+
+Running all tests
+```
+testcafe chrome
+```
+
+Running a specific test
+```
+testcafe chrome filename
+```
