@@ -1,0 +1,12 @@
+{
+  "name": "testcafe-sample-project",
+  "version": "1.0.0",
+  "description": "testing an application using testcafe",
+  "main": "index.js",
+  "repository": "https://github.com/qacrobat/testcafe-sample-project.git",
+  "author": "David Braun <david.braun@fielmann.com>",
+  "license": "MIT",
+  "dependencies": {
+    "testcafe": "^1.14.2"
+  }
+}
