@@ -1,12 +1,10 @@
 import { Selector, t } from "testcafe";
 
 class OverviewPage {
-  get getQuiz() {
-    return Selector("[data-testid=quiz-card]");
-  }
+  quizCard: Selector;
 
-  async clickOnQuiz() {
-    await t.click(this.getQuiz);
+  constructor() {
+    this.quizCard = Selector("[data-testid=quiz-card]");
   }
 }
 

@@ -1,12 +1,12 @@
 import { Selector, t } from "testcafe";
 
 class QuestionPage {
-  get QuizTitle() {
-    return Selector("h2").withText("Geography");
-  }
+  backButton: Selector;
+  nextButton: Selector;
 
-  async getQuizTitle() {
-    return this.QuizTitle;
+  constructor() {
+    this.backButton = Selector("[data-testid=question-back]");
+    this.nextButton = Selector("[data-testid=question-next]");
   }
 }
 
