@@ -4,7 +4,7 @@ import { Selector } from "testcafe";
 
 fixture`Getting Started`.page`https://tilda-quiz.vercel.app/`;
 
- const header = Selector("h2")
+const header = Selector("h2");
 
 test("Go to the first question, select an answer and go back to the Quiz-Overview", async (t) => {
   await t.click(OverviewPage.selectQuiz(0));
@@ -13,9 +13,7 @@ test("Go to the first question, select an answer and go back to the Quiz-Overvie
     .eql("Geography", "check element text", { timeout: 500 });
 
   await t.click(QuestionPage.selectQuestion(0));
-  await t
-      .expect(QuestionPage.selectedQuestion.count)
-      .eql(1)
+  await t.expect(QuestionPage.selectedQuestion.count).eql(1);
 
   await t.click(QuestionPage.backButton);
   await t
@@ -44,5 +42,4 @@ test("Go through a Quiz completely", async (t) => {
   await t
     .expect(OverviewPage.getQuizScore(0).innerText)
     .eql("Score: 1/3", "check element text", { timeout: 500 });
-
 });

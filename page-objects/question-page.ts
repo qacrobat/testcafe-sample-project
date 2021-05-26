@@ -12,8 +12,7 @@ class QuestionPage {
   }
 
   selectQuestion(position: number): Selector {
-    return Selector("label.css-1u8qly9")
-        .nth(position)
+    return Selector("label.css-1u8qly9").nth(position);
   }
 }
 

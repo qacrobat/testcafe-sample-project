@@ -34,5 +34,3 @@ Running a specific test
 ```
 testcafe chrome filename
 ```
-
-

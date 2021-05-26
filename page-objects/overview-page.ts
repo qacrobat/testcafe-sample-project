@@ -6,18 +6,17 @@ class OverviewPage {
 
   constructor() {
     this.quizCard = Selector("[data-testid=quiz-card]");
-    this.quizScore = Selector("[data-testid=quiz-score]")
+    this.quizScore = Selector("[data-testid=quiz-score]");
   }
 
-   selectQuiz(position: number): Selector {
-    return Selector("[data-testid=quiz-card]")
-        .nth(position)
+  selectQuiz(position: number): Selector {
+    return Selector("[data-testid=quiz-card]").nth(position);
   }
 
   getQuizScore(position: number): Selector {
     return Selector("[data-testid=quiz-card]")
-        .nth(position)
-        .find("[data-testid=quiz-score]")
+      .nth(position)
+      .find("[data-testid=quiz-score]");
   }
 }
 
